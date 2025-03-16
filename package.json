@@ -4,25 +4,28 @@
   "description": "Learning node, express and mongoDB",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "nodemon server.js",
-=======
-    "start:dev": "nodemon server.js",
->>>>>>> 7c472ef91854f1656565e13e1d7e1e605e1cdcb7
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Jonas Schmedtmann",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
-<<<<<<< HEAD
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.13.1",
     "mongoose": "^8.10.1",
-=======
-    "mongoose": "^8.8.2",
->>>>>>> 7c472ef91854f1656565e13e1d7e1e605e1cdcb7
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.10.0",
+    "slugify": "^1.6.6",
+    "validator": "^13.12.0",
+    "xss-clean": "^0.1.4"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -34,11 +37,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.17.0"
-<<<<<<< HEAD
   },
   "engines": {
     "node": ">=10.0.0"
-=======
->>>>>>> 7c472ef91854f1656565e13e1d7e1e605e1cdcb7
   }
 }
